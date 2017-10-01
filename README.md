@@ -10,16 +10,16 @@ gem install treehouse-dl
 ```
 
 ### Manual installation
-```
-git clone https://github.com/0x2C6/treehouse-dl.git
+```sh
+ user@User ~ $ git clone https://github.com/0x2C6/treehouse-dl.git
 
-cd treehouse-dl
+ user@User ~ $ cd treehouse-dl
 
-bundle
+ user@User ~ $ bundle
 
-chmod +x setup.rb
+ user@User ~ $ chmod +x setup.rb
 
-./setup.rb
+ user@User ~ $ ./setup.rb
 ```
 
 
