@@ -12,7 +12,7 @@ module Treehouse
     end
     def parse(argv)
       OptionParser.new do |opts|
-        opts.banner = "Usage: treehouse-dl [options] -e email -p PASSWORD -u URL"
+        opts.banner = "Usage: treehouse-dl [options] -e EMAIL -p PASSWORD -u URL"
         opts.on('-e','--email EMAIL','Set email') do |email|
           @email = email
         end
