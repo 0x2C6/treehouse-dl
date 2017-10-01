@@ -1,6 +1,4 @@
-# treehouse-dl
-[![Gem Version](https://badge.fury.io/rb/treehouse-dl.svg)](https://badge.fury.io/rb/treehouse-dl)
-
+# treehouse-dl[![Gem Version](https://badge.fury.io/rb/treehouse-dl.svg)](https://badge.fury.io/rb/treehouse-dl)
 Download Treehouse videos without pro membership
 
 Now you can download Treehouse videos easily. You need account with any membership (even trailer)
