@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'treehouse-dl/runner'
+runner = Treehouse::Runner.new(ARGV)
+runner.run
