@@ -1,7 +1,7 @@
 # treehouse-dl
 Download Treehouse videos without pro membership
 
-Now you can download Treehouse videos easly. You need account with any membership (even trailer)
+Now you can download Treehouse videos easily. You need account with any membership (even trailer)
 
 ## Installation
 
