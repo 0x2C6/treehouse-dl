@@ -19,7 +19,7 @@ gem install treehouse-dl
 ```
 
 
-##Usage
+## Usage
 
 ```
 treehouse-dl -e EMAIL -p PASSWORD -u URL
@@ -31,7 +31,7 @@ You have to fill all sections!
 Else it won't work
 Please write valid course url
 
-###Example
+### Example
 
 ```
 treehouse-dl -e example@email.com -p 123456aA -u https://teamtreehouse.com/library/unit-testing-in-java
