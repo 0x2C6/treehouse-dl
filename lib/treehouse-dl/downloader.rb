@@ -1,6 +1,5 @@
 require_relative 'runner'
 require 'selenium-webdriver'
-require 'phantomjs'
 require 'shell'
 require 'mechanize'
 require 'spinning_cursor'
@@ -12,7 +11,9 @@ require 'fileutils'
 module Treehouse
   class Downloader
     def self.valid(url)
-      driver = Selenium::WebDriver.for :phantomjs
+      options = Selenium::WebDriver::Chrome::Options.new
+      options.add_argument('--headless')
+      driver = Selenium::WebDriver.for :chrome, options: options
       driver.navigate.to url
       course_page = driver.page_source
       course_page_paths = course_page.split(' ').select{ |i| i =~ /library/ }.select{ |i| i =~ /href/ }.uniq
