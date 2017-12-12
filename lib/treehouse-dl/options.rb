@@ -1,5 +1,5 @@
 require 'optparse'
-
+$VERSION = '0.0.4'
 module Treehouse
   class Options
 
@@ -24,6 +24,10 @@ module Treehouse
         end
         opts.on("-h", "--help", "Show all options") do
           puts opts
+          exit
+        end
+        opts.on("-v","--version", "Show version") do
+          puts $VERSION
           exit
         end
         begin
