@@ -64,7 +64,15 @@ module Treehouse
             videolink[0..4] = ""
             videolink.chop!
             Downloader.create_directory("Treehouse",video_folder.text.parameterize)
-            system("wget -O #{link_no}-#{video_name.parameterize}.mp4 #{videolink}")
+            SpinningCursor.run do
+              banner "Downloading #{video_name}".green
+              type :dots
+              message "#{video_name} downloaded"
+              action do
+                system("wget -q -O #{link_no}-#{video_name.parameterize}.mp4 #{videolink}")
+              end
+
+            end
           end
         end
       rescue Mechanize::ResponseCodeError
