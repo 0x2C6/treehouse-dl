@@ -1,6 +1,7 @@
 require 'optparse'
-$VERSION = '0.0.4'
+
 module Treehouse
+  $VERSION = '0.1.0'
   class Options
 
     attr_reader :email
